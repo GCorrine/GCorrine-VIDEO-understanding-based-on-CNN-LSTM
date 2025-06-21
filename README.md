@@ -14,7 +14,7 @@
 4. 项目结构
 video_action_recognition/
 
-\├── data/
+├── data/
 
 │   ├── train/
 
