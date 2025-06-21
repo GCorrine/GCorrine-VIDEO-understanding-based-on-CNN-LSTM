@@ -1,1 +1,37 @@
 # GCorrine-VIDEO-understanding-based-on-CNN-LSTM
+1. 项目概述
+- 本项目旨在开发一个基于深度学习的视频理解系统，能够自动识别视频中的动作类别。我们采用CNN提取视频帧的视觉特征，然后通过LSTM对这些特征序列进行建模，以捕捉时间动态信息，最终实现对视频动作的分类。
+
+2. 数据集
+- **数据来源**：使用公开的视频动作识别数据集，如UCF-101或HMDB-51。
+- **数据预处理**：将视频分割为固定长度的帧序列，对帧进行缩放和归一化处理。
+
+3. 环境与依赖
+- **Python版本**：Python 3.8及以上
+- **深度学习框架**：PyTorch
+- **其他依赖**：OpenCV、NumPy、Torchvision
+
+4. 项目结构
+video_action_recognition/
+├── data/
+│   ├── train/
+│   └── test/
+├── models/
+│   ├── cnn.py
+│   ├── lstm.py
+│   └── model.py
+├── utils/
+│   ├── data_loader.py
+│   └── utils.py
+├── train.py
+├── test.py
+└── config.py
+
+
+5. 项目优化
+- 数据增强：在数据加载阶段增加数据增强操作，如随机裁剪、翻转等。
+- 模型优化：尝试不同的CNN架构（如ResNet、Inception）和LSTM参数。
+- 性能评估：使用混淆矩阵、精确率、召回率等指标评估模型性能。
+
+6. 项目总结
+本项目通过结合CNN和LSTM实现了视频动作识别。CNN负责提取视频帧的视觉特征，LSTM则对这些特征序列进行时间建模。通过实验验证，该模型能够有效识别视频中的动作类别。未来可以进一步优化模型架构和训练策略，以提高模型性能。
