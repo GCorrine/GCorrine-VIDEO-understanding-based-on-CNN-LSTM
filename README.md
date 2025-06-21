@@ -13,22 +13,35 @@
 
 4. 项目结构
 video_action_recognition/
-├── data/
+
+\├── data/
+
 │   ├── train/
+
 │   └── test/
+
 ├── models/
+
 │   ├── cnn.py
+
 │   ├── lstm.py
+
 │   └── model.py
+
 ├── utils/
+
 │   ├── data_loader.py
+
 │   └── utils.py
+
 ├── train.py
+
 ├── test.py
+
 └── config.py
 
 
-5. 项目优化
+6. 项目优化
 - 数据增强：在数据加载阶段增加数据增强操作，如随机裁剪、翻转等。
 - 模型优化：尝试不同的CNN架构（如ResNet、Inception）和LSTM参数。
 - 性能评估：使用混淆矩阵、精确率、召回率等指标评估模型性能。
