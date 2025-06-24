@@ -12,32 +12,19 @@
 - **其他依赖**：OpenCV、NumPy、Torchvision
 
 4. 项目结构
-video_action_recognition/
- ├── data/
-
-│   ├── train/
-
-│   └── test/
-
-├── models/
-
-│   ├── cnn.py
-
-│   ├── lstm.py
-
-│   └── model.py
-
-├── utils/
-
-│   ├── data_loader.py
-
-│   └── utils.py
-
-├── train.py
-
-├── test.py
-
-└── config.py
+- video_action_recognition/
+- ├── data/
+- │   ├── train/
+- │   └── test/
+- ├── models/
+- │   ├── cnn.py
+- │   ├── lstm.py
+- │   └── model.py
+- ├── utils/
+- │   ├── data_loader.py
+- │   └── utils.py
+- ├── train.py
+- ├── test.py
 
 5.训练过程
 - 模型初始化：使用 ResNet-50 的 CNN 部分提取视频帧特征，LSTM 部分处理特征序列。
