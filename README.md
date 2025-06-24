@@ -12,7 +12,7 @@
 - **其他依赖**：OpenCV、NumPy、Torchvision
 
 4. 项目结构
--video_action_recognition/
+- video_action_recognition/
 - ├── data/
 - │   ├── train/
 - │   └── test/
